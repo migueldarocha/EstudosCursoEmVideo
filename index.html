@@ -3,33 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tags</title>
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            background-color: yellow;
+            display: inline-block;
+            border:2px solid black;
+
+        }
+
+        div.a{
+            background-color: rgb(255, 0, 0);
+        }
+            
+        div.b {
+            background-image: linear-gradient(to right, green, blue);
+        }
+
+        div.c {
+            background-image: url("images/pattern003.png");
+        }
+
+        body{
+            background-image: url("images/wallpaper001.jpg");
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Tags e seletores HTML5 e CSS3</h1>
-        <nav>
-            <a href="#">Link vazio</a>
-            <a href="#">Link vazio</a>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>HTML5</h2>
-            <article>
-                <a href="tags.html">Tags</a>
-            </article>
-            <h2>CSS3</h2>
-            <article>
-                <a href="seletores.html">Seletores</a>
-            </article>
-        </section>
-    </main>
-    <aside>
-        <section></section>
-    </aside>
-    <footer>
-        <p>ESTE SITE FOI CRIADO COM O CONTEÚDO DO CURSO DE HTML E CSS DO PROFESSOR <a href="gustavoguanabara.github.io">GUSTAVO GUANABARA</a></p>
-    </footer>
+    <div class="a" id="a"></div>
+    <div class="b" id="b"></div>
+    <div class="c" id="c"></div>
 </body>
 </html>
